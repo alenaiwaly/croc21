@@ -9,6 +9,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class main {
@@ -22,19 +24,13 @@ public class main {
         try {
             final List<String> lines = Files.readAllLines(a, StandardCharsets.UTF_8);
             int count = 0;
-            boolean isW = false;
             for (String line : lines) {
-                for (int i = 0; i < line.length(); i++) {
-                    if (line.charAt(i) >= 1040 && line.charAt(i) <= 1103 || line.charAt(i) >= 65 && line.charAt(i) <= 90 || line.charAt(i) >= 97 && line.charAt(i) <= 122  ) {
-                        if (!isW)
-                            count++;
-                        isW = true;
-                    }
-                    else {
-                        isW = false;
-                    }
+                Pattern ptrn = Pattern.compile("\\w+", Pattern.UNICODE_CHARACTER_CLASS);
+                Matcher mtch = ptrn.matcher(line);
+                while (mtch.find()) {
+                    count++;
                 }
-                isW = false;
+
             }
             System.out.println("Ans: " + count);
         } catch (IOException e){
