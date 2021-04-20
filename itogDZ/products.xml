@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<products>
+    <product>
+        <id>1</id>
+        <name>Bread</name>
+    </product>
+    <product>
+        <id>2</id>
+        <name>Milk</name>
+    </product>
+    <product>
+        <id>3</id>
+        <name>Tea</name>
+    </product>
+    <product>
+        <id>4</id>
+        <name>Biscuit</name>
+    </product>
+    <product>
+        <id>5</id>
+        <name>Butter</name>
+    </product>
+    <product>
+        <id>6</id>
+        <name>Oil</name>
+    </product>
+    <product>
+        <id>7</id>
+        <name>Peach</name>
+    </product>
+    <product>
+        <id>8</id>
+        <name>Ham</name>
+    </product>
+    <product>
+        <id>9</id>
+        <name>Bacon</name>
+    </product>
+    <product>
+        <id>10</id>
+        <name>Olives</name>
+    </product>
+</products>
