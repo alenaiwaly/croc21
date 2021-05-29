@@ -3,7 +3,7 @@ package dz1;
 public class Dz1 {
 
     /**
-     * Функция, которая выводит Fizz, если число кратно трем, и Buzz, если крастно пяти
+     * Функция, которая выводит Fizz, если число кратно трем, и Buzz, если кратно пяти
      * @param i 
      */
     public static void isT(int i) {
